@@ -4,8 +4,8 @@ import React from 'react';
 import Layout from '@/components/layout';
 import { getAllPostIds, getPostData } from '@/lib/posts';
 
-export const getStaticProps = async (data) => {
-  const { params } = data;
+export const getStaticProps = async (context) => {
+  const { params } = context;
   const postData = await getPostData(params.id);
 
   return {
