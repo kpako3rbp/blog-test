@@ -1,5 +1,8 @@
 import '@/styles/globals.scss';
 
-export default function App({ Component, pageProps }) {
+const App = (props) => {
+  const { Component, pageProps } = props;
   return <Component {...pageProps} />;
-}
+};
+
+export default App;
